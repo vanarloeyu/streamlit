@@ -16,7 +16,7 @@ tickerData = yf.Ticker(tickerSymbol)
 tickerDf = tickerData.history(period='id', start='2010-5-31', end='2020-5-31')
 
 st.write("""
-## Closing Price
+## Closing Prices
 """)
 st.line_chart(tickerDf.Close)
 st.write("""
